@@ -1,1 +1,3 @@
 FROM qmcgaw/latexdevcontainer
+
+RUN apt-get update && apt-get install procps
