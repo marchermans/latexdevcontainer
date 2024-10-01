@@ -17,6 +17,8 @@ services:
       - ~/.zsh_history:/root/.zsh_history:z
       # Git config
       - ~/.gitconfig:/root/.gitconfig
+      # IdeaProjects
+      - ~/IdeaProjects:/projects
     environment:
       - TZ=
     entrypoint: ["zsh", "-c", "while sleep 1000; do :; done"]
